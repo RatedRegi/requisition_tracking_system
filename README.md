@@ -40,11 +40,12 @@ This system is designed specifically for government institutions in Zimbabwe, pr
    ```bash
    git clone https://github.com/RatedRegi/requisition_tracking_system.git
    cd requisition-tracking-system
+ ```
 
 2. **Install PHP dependencies**
    ```bash
 composer install
-```
+ ```
 
 3. **Install Node.js dependencies**
    ```bash
