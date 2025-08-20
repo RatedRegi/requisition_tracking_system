@@ -1,4 +1,4 @@
-## Shurugwi Town Council - Requisition Tracking System
+# Shurugwi Town Council - Requisition Tracking System
 
 A modern, digital requisition tracking system built for Shurugwi Town Council to replace manual processes and streamline procurement operations.
 
@@ -40,163 +40,132 @@ This system is designed specifically for government institutions in Zimbabwe, pr
    ```bash
    git clone https://github.com/RatedRegi/requisition_tracking_system.git
    cd requisition-tracking-system
- ```
+   ```
 
 2. **Install PHP dependencies**
    ```bash
-composer install
- ```
+   composer install
+   ```
 
 3. **Install Node.js dependencies**
    ```bash
-npm install
-```
+   npm install
+   ```
+
 4. **Environment setup**
    ```bash
-cp .env.example .env
-php artisan key:generate
-```
+   cp .env.example .env
+   php artisan key:generate
+   ```
 
 5. **Configure database**
-**Edit .env file and set your database credentials:**
-
-  ```bash
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=requisition_tracking_system
-DB_USERNAME=root
-DB_PASSWORD=
-```
-
+   
+   Edit `.env` file and set your database credentials:
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=requisition_tracking_system
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
 
 6. **Run migrations**
    ```bash
-php artisan migrate
-```
+   php artisan migrate
+   ```
 
 7. **Build assets**
    ```bash
-npm run build
-```
+   npm run build
+   ```
 
 8. **Start development servers**
-**Terminal: Start Laravel & Vite dev server**
    
+   Start Laravel & Vite dev server:
    ```bash
-composer run dev
- ```
+   composer run dev
+   ```
 
-## Usage
-Accessing the System
+## 📖 Usage
 
-Navigate to http://localhost:8000
+### Accessing the System
 
-Click "Sign In" to access the login page
+1. Navigate to `http://localhost:8000`
+2. Click "Sign In" to access the login page
+3. Use your credentials to log in
+4. Access the dashboard to manage requisitions
 
-Use your credentials to log in
+## 👥 User Roles
 
-Access the dashboard to manage requisitions
-
-## User Roles
-
-Administrators: Full system access and user management
-
-Department Heads: Approve requisitions within their department
-
-Staff Members: Submit and track requisitions
-
-Finance Officers: Review and process approved requisitions
+- **Administrators**: Full system access and user management
+- **Department Heads**: Approve requisitions within their department
+- **Staff Members**: Submit and track requisitions
+- **Finance Officers**: Review and process approved requisitions
 
 ## 🏗️ System Architecture
-Core Modules
 
-Authentication & Authorization
+### Core Modules
 
-User registration and login
+#### Authentication & Authorization
+- User registration and login
+- Role-based access control
+- Password reset functionality
 
-Role-based access control
+#### Requisition Management
+- Create and submit requisitions
+- Approval workflow
+- Status tracking
+- Document attachments
 
-Password reset functionality
+#### Department Management
+- Department hierarchy
+- User assignments
+- Department-specific workflows
 
-Requisition Management
-
-Create and submit requisitions
-
-Approval workflow
-
-Status tracking
-
-Document attachments
-
-Department Management
-
-Department hierarchy
-
-User assignments
-
-Department-specific workflows
-
-Reporting & Analytics
-
-Requisition statistics
-
-Department performance
-
-Audit trails
-
-Export functionality
+#### Reporting & Analytics
+- Requisition statistics
+- Department performance
+- Audit trails
+- Export functionality
 
 ## 🔒 Security Features
 
-Authentication: Secure login with password hashing
-
-Authorization: Role-based access control
-
-Audit Trails: Complete activity logging
-
-Data Encryption: Sensitive data encryption
-
-Session Management: Secure session handling
-
-CSRF Protection: Cross-site request forgery protection
+- **Authentication**: Secure login with password hashing
+- **Authorization**: Role-based access control
+- **Audit Trails**: Complete activity logging
+- **Data Encryption**: Sensitive data encryption
+- **Session Management**: Secure session handling
+- **CSRF Protection**: Cross-site request forgery protection
 
 ## 📊 Dashboard Features
 
 The main dashboard provides:
 
-Overview Statistics: Total, pending, approved, and rejected requisitions
+- **Overview Statistics**: Total, pending, approved, and rejected requisitions
+- **Quick Actions**: Search, filter, and create new requisitions
+- **Recent Activity**: Latest requisition updates
+- **Department Overview**: Department-specific statistics
+- **Real-time Updates**: Live status updates
 
-Quick Actions: Search, filter, and create new requisitions
+## �� Customization
 
-Recent Activity: Latest requisition updates
-
-Department Overview: Department-specific statistics
-
-Real-time Updates: Live status updates
-
-## 🎨 Customization
-Branding
+### Branding
 
 The system is customized for Shurugwi Town Council with:
 
-Council branding and colors
+- Council branding and colors
+- Government of Zimbabwe references
+- Professional government-grade appearance
 
-Government of Zimbabwe references
-
-Professional government-grade appearance
-
-Configuration
+### Configuration
 
 Key configuration files:
 
-.env: Environment variables
-
-config/app.php: Application settings
-
-tailwind.config.js: UI customization
-
-vite.config.ts: Build configuration
+- `.env`: Environment variables
+- `config/app.php`: Application settings
+- `tailwind.config.js`: UI customization
+- `vite.config.ts`: Build configuration
 
 ## 📝 License
 
@@ -206,23 +175,20 @@ This project is developed for Shurugwi Town Council and is proprietary software.
 
 For technical support or questions:
 
-Contact the IT Department
-
-Email: it@shurugwi.gov.zw
-
-Phone: +263 782 143 404
+- **Contact**: IT Department
+- **Email**: it@shurugwi.gov.zw
+- **Phone**: +263 782 143 404
 
 ## 🔄 Updates
 
 Regular updates will be provided to:
 
-Improve security
+- Improve security
+- Add new features
+- Fix bugs
+- Enhance performance
 
-Add new features
+---
 
-Fix bugs
-
-Enhance performance
-
-Developed for Shurugwi Town Council
-Government of Zimbabwe
+**Developed for Shurugwi Town Council**  
+*Government of Zimbabwe*
