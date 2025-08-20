@@ -44,40 +44,47 @@ This system is designed specifically for government institutions in Zimbabwe, pr
 2. **Install PHP dependencies**
    ```bash
 composer install
+```
 
 3. **Install Node.js dependencies**
    ```bash
 npm install
-
+```
 4. **Environment setup**
    ```bash
 cp .env.example .env
 php artisan key:generate
+```
 
 5. **Configure database**
-   ```bash
-Edit .env file and set your database credentials:
+**Edit .env file and set your database credentials:**
 
+  ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=requisition_tracking_system
 DB_USERNAME=root
 DB_PASSWORD=
+```
+
 
 6. **Run migrations**
    ```bash
 php artisan migrate
+```
 
 7. **Build assets**
    ```bash
 npm run build
+```
 
 8. **Start development servers**
+**Terminal: Start Laravel & Vite dev server**
+   
    ```bash
-# Terminal: Start Laravel & Vite dev server
 composer run dev
-
+ ```
 
 ## Usage
 Accessing the System
